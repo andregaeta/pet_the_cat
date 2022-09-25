@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pet The Cat! 
+        </title>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size: 200%">Pet The Cat!</h1>
+        <img src="https://i.pinimg.com/736x/ea/0b/36/ea0b36dfa8e14f15b515bc469070de06.jpg" alt="Cat" style="display: block; margin-left: auto; margin-right: auto; width: 15%;">
+        <p style="text-align: center; font-size: 150%">Click the button to pet the cat!</p>
+        <p style="text-align: center; font-size: 150%">You have pet the cat <span id="petCount">0</span> times!</p>
+        <p style="text-align: center; font-size: 150%"><button onclick="petCat()">Pet The Cat!</button></p>
+        <script>
+            function petCat() 
+            {
+                var petCount = document.getElementById("petCount");
+                petCount.innerHTML = Number(petCount.innerHTML) + 1;
+            }
+        </script>
+        <hr>
+        <section>
+            <h2>What's a cat?</h2>
+            <p>The cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is sometimes referred to as the domestic cat or house cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat, or a feral cat; the latter ranges freely and avoids human contact. Domestic cats are valued by humans for companionship and their ability to kill rodents. About 60 cat breeds are recognized by various cat registries.</p>
+        </section>
+        <hr>
+        <section>
+            <h2>Why pet it?</h2>
+            <ul>
+                <li>They meow.</li>
+                <li>They purr.</li>
+                <li>They don't bark. Most don't, anyway.</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Not sold yet?</h2>
+            <p>Here's a video of a few cats. The title says they're funny.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5dsGWM5XGdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        
+    </body>
+</html>
